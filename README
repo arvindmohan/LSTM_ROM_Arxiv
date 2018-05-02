@@ -1,26 +1,25 @@
 LSTM ROM for turbulent flow control - arxiv 1804.09269
 A Deep Learning based Approach to Reduced Order Modeling
 for Turbulent Flow Control using LSTM Neural Networks
+https://arxiv.org/abs/1804.09269
 Arvind T. Mohan & Datta V. Gaitonde
 The Ohio State University
 
 
 1) Dataset: Please check the paper for details on dataset and how it was processed to obtain POD time coefficients. The data in this
 repo consists of the POD \alpha_{t} computed from the datasets obtained at http://turbulence.pha.jhu.edu/.
-All scripts for downloading slices of the DNS datasets can be a found at this link.
+All scripts for downloading slices of the DNS datasets can be a found at the link above.
 
 2) The codes (.py files and Ipython notebooks) are provided to be run directly from the directory
 
-3) The training folder contains codes to train the LSTM model for the given input
+3) The training folder contains codes to train the LSTM/BiLSTM model for the given input
 
-4) Analysis folder contains Ipython notebooks to visualize results of the LSTM model.
+4) Analysis folder contains Ipython notebooks to visualize results of the LSTM/BiLSTM models.
 
 
 The .h5 are the trained models which can be directly used for modeling from the Ipython notebooks.
 The .npz files are compressed files which show the loss vs training epochs - can be visualized from the
 analysis codes to study training performance.
 
-
-Please contact me if there are any comments/clarifications. Also, if you find the codes useful in your research
-please cite our work.
+This is a research code, and not production level software :) - so please feel free to leave me a note for comments, improvements/suggestions etc. Also, if you find the codes useful in your research please cite our work.
 
